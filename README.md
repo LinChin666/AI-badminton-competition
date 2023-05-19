@@ -1,4 +1,4 @@
-# [AI-badminton-competition - TEAM_3031](https://aidea-web.tw/topic/cbea66cc-a993-4be8-933d-1aa9779001f8)
+# [教電腦看羽球 - 台灣第一個結合AI與運動的競賽 - TEAM_3031](https://aidea-web.tw/topic/cbea66cc-a993-4be8-933d-1aa9779001f8)
 
 ## 簡介
 近年統計全球有約22億羽球人口，台灣則超過3百萬人，單項運動全國普及度排名第二，且近年羽球選手在國際賽場上有十分突出的表現，國民關注度逐漸提升。
