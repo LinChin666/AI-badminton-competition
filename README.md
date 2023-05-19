@@ -10,16 +10,15 @@
 - 套件: git, matplotlib, numpy, opencv-python, Pillow, psutil, PyYAML, scipy, thop, torch, torchvision, tqdm, tensorboard, pandas, seaborn, pyqt5, PyMySQL, imutils, piexif, scikit-learn, keras
 
 
-## 訓練指令
-
-
 ## 測試指令
 ```
 python answer.py
 ```
 
 ## 名次
+### Public: 0.061 - 14th
 
+### Private: 0.0558 - 12th
 
 ## 參考資料
 - [AI CUP 2023 春季賽【教電腦看羽球競賽－台灣第一個結合AI與運動的競賽】](https://www.youtube.com/playlist?list=PLk_m5EiRQRF2fuGNoLep5TCqcPy1Aac3e)
