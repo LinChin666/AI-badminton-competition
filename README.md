@@ -11,9 +11,39 @@
 
 
 ## 測試指令
+
+### TrackNetv2
 ```
+conda create --name tf python=3.9 -y
+conda deactivate
+conda activate tf
+nvidia-smi
+conda install -c conda-forge cudatoolkit=11.8.0
+pip install nvidia-cudnn-cu11==8.6.0.163
+CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn.__file__)"))
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/:$CUDNN_PATH/lib
+mkdir -p $CONDA_PREFIX/etc/conda/activate.d
+CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn.__file__)"))
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/:$CUDNN_PATH/lib' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+pip install --upgrade pip
+pip install tensorflow==2.12.*
+python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+
+git clone https://nol.cs.nctu.edu.tw:234/open-source/TrackNetv2.git
+cd TrackNetv2/3_in_3_out/
+python3 predict.py --load_weights=model906_30
+```
+
+### YOLOv7
+```
+git clone https://github.com/WongKinYiu/yolov7.git
+wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7x.pt
+
 python answer.py
 ```
+
+
 
 ## 名次
 ### Public: 0.061 - 14th
