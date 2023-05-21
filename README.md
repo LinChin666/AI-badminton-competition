@@ -12,7 +12,7 @@
 - 套件: git, matplotlib, numpy, opencv-python, Pillow, psutil, PyYAML, scipy, thop, torch, torchvision, tqdm, tensorboard, pandas, seaborn, pyqt5, PyMySQL, imutils, piexif, scikit-learn, keras
 
 
-## 測試指令
+## 訓練和測試指令
 
 ### TrackNetv2
 ```
