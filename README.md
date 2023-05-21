@@ -53,7 +53,7 @@ python answer.py
 ```
 git clone https://github.com/prlz77/resnext.pytorch
 cd resnext.pytorch
-python train.py ~/DATASETS/cifar.python cifar10 -s ./snapshots --log ./logs --ngpu 2 --learning_rate 0.05 -b 32
+python train.py ~/DATASETS/cifar.python [train folder] -s ./snapshots --log ./logs --ngpu 2 --learning_rate 0.05 -b 32
 python test.py ~/DATASETS/cifar.python [test folder] --ngpu 2 --load ./snapshots/model.pytorch --test_bs 32
 ```
 
